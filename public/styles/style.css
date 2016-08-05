@@ -165,6 +165,33 @@ a {
   a:hover {
     color: #E37D15; }
 
+/*Some CSS*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.magnify {
+  width: 500px;
+  margin: 50px auto;
+  position: relative; }
+
+/*Lets create the magnifying glass*/
+.large {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url("../assets/curtainrunportrait.jpg") no-repeat;
+  /*hide the glass by default*/
+  display: none; }
+
+/*To solve overlap bug at the edges during magnification*/
+.small {
+  display: block; }
+
 .main {
   background: url("../assets/wisbonemain.jpg") center no-repeat;
   width: 100%;
@@ -227,7 +254,27 @@ a {
   .pagefour i {
     color: black; }
   .pagefour .textpage {
-    position: relative;
     top: 400px; }
+
+.pagefive {
+  background-color: #978486; }
+  .pagefive .textpage {
+    top: 250px; }
+  .pagefive .picturespage {
+    top: 225px; }
+    .pagefive .picturespage img {
+      margin: 0px 50px 0;
+      width: 85%; }
+
+.pagesix {
+  background-color: #978486; }
+  .pagesix .picturespage {
+    padding: 0;
+    width: 80%;
+    top: 20px; }
+    .pagesix .picturespage img {
+      border: none;
+      margin: 0 auto;
+      width: 95%; }
 
 /*# sourceMappingURL=style.css.map */
