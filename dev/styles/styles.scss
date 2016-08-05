@@ -1,0 +1,140 @@
+@import 'partials/setup';
+
+$font: 'Montserrat', sans-serif;
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+p {
+		@include fontSize(28);
+		color:white;
+		font-family: $font;
+	}
+h1 {
+		@include fontSize(60);
+		font-family: $font;
+	}
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+		
+	i {
+		@include fontSize(60);
+		color: white;
+		// text-align: left;
+		// margin-top:10%;
+
+	}
+}
+body {
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-size: 62.5%;
+}
+a {
+	text-decoration: none;
+	&:hover{
+		color: #E37D15;
+	}
+}
+
+.main {
+	background: url('../assets/wisbonemain.jpg') center no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover; 
+
+}
+.mainpage {
+	display: flex;
+	justify-content: space-between;
+	h1{
+		position: relative;
+    	top: 500px;
+    	left: 50px;
+    	margin: 0 auto;
+    	color: white;
+		text-transform: uppercase;
+
+	}
+	i {
+		position: relative;
+    	top: 500px;
+    	// width: 30%;
+	}
+	
+}
+
+.fa-arrow-left {
+		&:hover{
+		color: #4BF860;
+	}
+	}
+.fa-arrow-right{
+	&:hover{
+		color: #E37D15;
+	}
+}	
+.pagetwo {
+	background-color: #9FA7B2 ;
+	// width: 100%;
+	// height: 100vh;
+	// background-size: cover; 
+}
+.picturespage {
+	width: 50%;
+	position: relative;
+    top: 50px;
+
+	img {
+		margin: 75px 75px 0;
+    	width: 80%;
+    	border: 5px solid #909090;
+    	border-radius: 9px;
+    	// padding: 7px;
+	}
+}
+.textpage {
+	width: 50%;
+	position: relative;
+    top: 450px;
+    padding: 0px 35px 0 10px;
+	
+}
+
+// Page Three
+.pagethree {
+	background-color: #895E89;
+}
+.textsingle {
+	position: relative;
+    top: 480px;
+    padding: 0px 35px;
+	
+}
+
+// Page Four
+.pagefour {
+	background-color: white;
+	p {
+		color: black;
+	}
+	i {
+		color: black;
+	}
+	.textpage {
+	position: relative;
+    top: 400px;
+	
+}
+
+}
