@@ -206,3 +206,36 @@ a {
 
 }
 
+//Map Page
+body.mapBody {
+	// background: url('../assets/mapsite.jpg');
+	width: 100px;
+    height: 100px;
+	overflow: scroll;
+}
+.border{
+	border: 6px solid white;
+	width: 95%;
+	height: 95vh;
+	border-radius: 10px;
+	margin: 2%;
+	position: fixed;
+	top: 0;
+	left: .5%;
+	img{
+		width: 60px;
+    	position: relative;
+    	left: 93%;
+
+	}
+	p {
+		width: 200px;
+		position: relative;
+		left: 75%;
+		top: -7%;
+		@include fontSize(15);
+		text-shadow: 4px 3px 5px #888888;
+	}
+
+}
+
