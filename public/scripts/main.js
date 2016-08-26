@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+	$("#scrollerimg").draggable();
+
 	var native_width = 0;
 	var native_height = 0;
 

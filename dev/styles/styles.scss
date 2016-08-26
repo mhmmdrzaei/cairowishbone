@@ -209,33 +209,140 @@ a {
 //Map Page
 body.mapBody {
 	// background: url('../assets/mapsite.jpg');
-	width: 100px;
-    height: 100px;
+	display: flex;
+	background-color: grey;
+}
+.scrollermap{
+	width: 50%;
 	overflow: scroll;
 }
-.border{
+#scrollerimg{
+	overflow-x: scroll;
+	overflow-y:scroll;
+	overflow: scroll;
 	border: 6px solid white;
-	width: 95%;
-	height: 95vh;
 	border-radius: 10px;
-	margin: 2%;
-	position: fixed;
-	top: 0;
-	left: .5%;
-	img{
-		width: 60px;
-    	position: relative;
-    	left: 93%;
+	#mango {
+		position: relative;
+		top: 10px;
+		left: 45px;
+	}
 
+}
+
+.wrappermap{
+	width: 50%;
+}
+.border{
+	display: flex;
+    justify-content: space-between;
+	margin: 2%;
+	
+	img.scroll{
+		max-height: 70px;
+    	// position: relative;
+    	// left: 93%;
+
+	}
+	img.runner{
+		max-height: 70px;
 	}
 	p {
 		width: 200px;
-		position: relative;
-		left: 75%;
-		top: -7%;
+		// position: relative;
+		// left: 75%;
+		padding-top: 15px;
 		@include fontSize(15);
 		text-shadow: 4px 3px 5px #888888;
 	}
 
+}
+//The pointers on map
+
+.pointPin {
+	text-align: center;
+    width: 60px;
+    img {
+    	max-height: 51px;
+    }
+    a {
+    	color: red;
+    	@include fontSize(12);
+    	font-family: $font;
+   		text-shadow: 4px 4px 10px rgba(255, 255, 255, 1);
+   		&:hover {
+   			color:#E37D15;
+   		}
+    }
+}
+.mango1 {
+	position: relative;
+    top: -808px;
+    left: 1179px;
+}
+.makhubu {
+	position: relative;
+    top: -536px;
+    left: 1476px;
+}
+.eardrops {
+	position: relative;
+    top: -742px;
+    left: 1476px;
+}
+.yosemite{
+	position: relative;
+    top: -627px;
+    left: 1067px;
+}
+.valentino {
+	position: relative;
+    top: -443px;
+    left: 1560px;
+}
+.mo {
+	position: relative;
+    top: -734px;
+    left: 1132px;
+}
+.triplea{
+	position: relative;
+    top: -2067px;
+    left: 716px;
+}
+.expedia {
+	position: relative;
+	top: -1038px;
+	left: 1279px;
+}
+.wives{
+	 position: relative;
+	 top: -1110px;
+	 left: 1131px;
+}
+.haunting {
+	position: relative;
+    top: -1199px;
+    left: 1149px;
+}
+.son {
+	position: relative;
+	top: -1549px;
+    left: 1448px;
+}
+.groom {
+	position: relative;
+    top: -1135px;
+    left: 1116px;
+}
+.fahmy {
+	position: relative;
+    top: -1305px;
+    left: 1330px;
+}
+.rayban {
+	position: relative;
+    top: -1333px;
+    left: 1272px;
 }
 
